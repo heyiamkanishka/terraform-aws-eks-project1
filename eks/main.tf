@@ -44,6 +44,8 @@ module "eks" {
   name               = "my-eks-cluster"
   kubernetes_version = "1.33"
 
+  create_cloudwatch_log_group = false 
+  
   # Optional
   endpoint_public_access = true
 
